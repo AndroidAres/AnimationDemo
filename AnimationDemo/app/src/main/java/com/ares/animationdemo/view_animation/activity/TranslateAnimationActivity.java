@@ -1,4 +1,4 @@
-package com.ares.animationdemo.activity;
+package com.ares.animationdemo.view_animation.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -1,15 +1,15 @@
-package com.ares.animationdemo.activity;
+package com.ares.animationdemo.view_animation.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.ares.animationdemo.R;
 
-public class ScaleAnimationActivity extends AppCompatActivity {
+public class AlphaAnimationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scale_animation);
+        setContentView(R.layout.activity_alpha_animation);
     }
 }

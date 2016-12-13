@@ -1,49 +1,44 @@
-package com.ares.animationdemo;
+package com.ares.animationdemo.view_animation;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.ares.animationdemo.view_animation.ViewAnimationActivity;
+import com.ares.animationdemo.R;
+import com.ares.animationdemo.databinding.ActivityViewAnimationBinding;
 import com.ares.animationdemo.view_animation.activity.AlphaAnimationActivity;
 import com.ares.animationdemo.view_animation.activity.RotateAnimationActivity;
 import com.ares.animationdemo.view_animation.activity.ScaleAnimationActivity;
 import com.ares.animationdemo.view_animation.activity.TranslateAnimationActivity;
-import com.ares.animationdemo.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class ViewAnimationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityMainBinding binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
-        binding.setPresenter(new Presenter(this));
+        ActivityViewAnimationBinding binding = DataBindingUtil.setContentView(this,R.layout.activity_view_animation);
+        binding.setPresenter(new ViewAnimationPresenter());
     }
 
-    public class Presenter{
-
-        Activity activity;
-
-        public Presenter(Activity activity) {
-            this.activity = activity;
-        }
-
+    public class ViewAnimationPresenter{
         public void onClick(int position){
             Intent intent = null;
             switch (position){
                 case 0:
-                    intent = new Intent(MainActivity.this, ViewAnimationActivity.class);
+                    intent = new Intent(ViewAnimationActivity.this, AlphaAnimationActivity.class);
                     break;
                 case 1:
+                    intent = new Intent(ViewAnimationActivity.this, RotateAnimationActivity.class);
                     break;
                 case 2:
+                    intent = new Intent(ViewAnimationActivity.this, ScaleAnimationActivity.class);
                     break;
                 case 3:
+                    intent = new Intent(ViewAnimationActivity.this, TranslateAnimationActivity.class);
                     break;
             }
-            activity.startActivity(intent);
+            startActivity(intent);
         }
     }
 }
