@@ -13,6 +13,9 @@ import com.ares.animationdemo.view_animation.activity.ScaleAnimationActivity;
 import com.ares.animationdemo.view_animation.activity.TranslateAnimationActivity;
 import com.ares.animationdemo.databinding.ActivityMainBinding;
 
+/**
+ * 首页展示
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
