@@ -27,7 +27,9 @@
         <activity
             android:name=".view_animation.activity.TranslateAnimationActivity"
             android:label="TranslateAnimationActivity" />
-        <activity android:name=".view_animation.ViewAnimationActivity"></activity>
+        <activity android:name=".view_animation.ViewAnimationActivity" />
+        <activity android:name=".property_animation.PropertyAnimationActivity" />
+        <activity android:name=".drawable_animation.DrawableAnimationActivity"></activity>
     </application>
 
 </manifest>
