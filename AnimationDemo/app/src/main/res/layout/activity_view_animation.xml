@@ -4,12 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <RelativeLayout
+    <include layout="@layout/layout_constant_graph"
         android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:background="@color/colorPrimary">
+        android:layout_height="200dp"/>
 
-    </RelativeLayout>
+    <include layout="@layout/layout_constant_property"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
 </LinearLayout>

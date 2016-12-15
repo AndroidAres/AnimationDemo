@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_constant_graph"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"/>
+
+    <include layout="@layout/layout_constant_property"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scale动画特有属性"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="FromXScale:"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/fragment_scale_et_fromxscale"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="默认1.0"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="ToXScale:"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/fragment_scale_et_toxscale"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="默认1.0"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="FromYScale:"
+        android:gravity="right"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/fragment_scale_et_fromyscale"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="默认1.0"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="ToYScale:"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/fragment_scale_et_toyscale"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="默认1.0"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="PivotX:"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/fragment_scale_et_pivotx"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="默认0"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="PivotY:"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/fragment_scale_et_pivoty"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="默认0"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

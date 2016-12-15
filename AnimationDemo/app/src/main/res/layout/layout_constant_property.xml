@@ -7,8 +7,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:text="Tween动画通用属性"
+        android:gravity="center"
         android:textSize="16sp"
         android:textColor="@android:color/black"/>
 
