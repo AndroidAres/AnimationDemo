@@ -15,18 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".view_animation.activity.AlphaAnimationActivity"
-            android:label="AlphaAnimationActivity" />
-        <activity
-            android:name=".view_animation.activity.RotateAnimationActivity"
-            android:label="RotateAnimationActivity" />
-        <activity
-            android:name=".view_animation.activity.ScaleAnimationActivity"
-            android:label="ScaleAnimationActivity" />
-        <activity
-            android:name=".view_animation.activity.TranslateAnimationActivity"
-            android:label="TranslateAnimationActivity" />
         <activity android:name=".view_animation.ViewAnimationActivity" />
         <activity android:name=".property_animation.PropertyAnimationActivity" />
         <activity android:name=".drawable_animation.DrawableAnimationActivity"></activity>

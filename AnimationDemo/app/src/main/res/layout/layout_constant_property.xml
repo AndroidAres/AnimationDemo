@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">\
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tween动画通用属性"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <CheckBox
+        android:id="@+id/layout_constant_cb_detachwallpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DetachWallpaper" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/layout_constant_cb_fillafter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FillAfter" />
+
+        <CheckBox
+            android:id="@+id/layout_constant_cb_fillbefore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:text="FillBefore" />
+
+        <CheckBox
+            android:id="@+id/layout_constant_cb_fillenable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:text="FillEnable" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="RepeatCount:"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/layout_constant_et_repeatcount"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="默认0次"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/layout_constant_rg_repeatmode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="RepeatMode:"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/layout_constant_rb_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Restart"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/layout_constant_rb_reverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Reverse"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Duration:"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/layout_constant_et_duration"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="默认3000毫秒"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="zAdjustment:"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/layout_constant_rb_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Normal"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/layout_constant_rb_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Bottom"/>
+
+        <RadioButton
+            android:id="@+id/layout_constant_rb_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Top"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="StartOffset:"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/layout_constant_et_startoffset"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="默认延迟0毫秒"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

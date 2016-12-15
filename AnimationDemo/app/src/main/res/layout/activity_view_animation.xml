@@ -1,63 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <data>
-        <variable
-            name="presenter"
-            type="com.ares.animationdemo.view_animation.ViewAnimationActivity.ViewAnimationPresenter" />
-    </data>
-
-    <LinearLayout
-        android:id="@+id/activity_main"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context="com.ares.animationdemo.MainActivity">
+        android:layout_height="47dp"
+        android:background="@color/colorPrimary">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="7dp"
-            android:background="@color/colorPrimary"
-            android:onClick="@{()->presenter.onClick(0)}"
-            android:text="AlphaAnimation"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:textSize="18sp" />
+    </RelativeLayout>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="7dp"
-            android:background="@color/colorPrimary"
-            android:onClick="@{()->presenter.onClick(1)}"
-            android:text="RotateAnimation"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:textSize="18sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="7dp"
-            android:background="@color/colorPrimary"
-            android:onClick="@{()->presenter.onClick(2)}"
-            android:text="ScaleAnimation"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:textSize="18sp" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="7dp"
-            android:background="@color/colorPrimary"
-            android:onClick="@{()->presenter.onClick(3)}"
-            android:text="TranslateAnimation"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:textSize="18sp" />
-
-    </LinearLayout>
-</layout>
+</LinearLayout>

@@ -1,11 +1,12 @@
 package com.ares.animationdemo.property_animation;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.ares.animationdemo.R;
 
-public class PropertyAnimationActivity extends AppCompatActivity {
+public class PropertyAnimationActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

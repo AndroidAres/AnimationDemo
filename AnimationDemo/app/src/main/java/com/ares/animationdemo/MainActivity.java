@@ -2,51 +2,39 @@ package com.ares.animationdemo;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.ares.animationdemo.view_animation.ViewAnimationActivity;
-import com.ares.animationdemo.view_animation.activity.AlphaAnimationActivity;
-import com.ares.animationdemo.view_animation.activity.RotateAnimationActivity;
-import com.ares.animationdemo.view_animation.activity.ScaleAnimationActivity;
-import com.ares.animationdemo.view_animation.activity.TranslateAnimationActivity;
-import com.ares.animationdemo.databinding.ActivityMainBinding;
 
 /**
  * 首页展示
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityMainBinding binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
-        binding.setPresenter(new Presenter(this));
+        setContentView(R.layout.activity_main);
+
+        findViewById(R.id.activity_main_btn_view).setOnClickListener(this);
+
     }
 
-    public class Presenter{
-
-        Activity activity;
-
-        public Presenter(Activity activity) {
-            this.activity = activity;
+    @Override
+    public void onClick(View view) {
+        Intent intent = null;
+        switch (view.getId()){
+            case R.id.activity_main_btn_view:
+                intent = new Intent(MainActivity.this, ViewAnimationActivity.class);
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
         }
-
-        public void onClick(int position){
-            Intent intent = null;
-            switch (position){
-                case 0:
-                    intent = new Intent(MainActivity.this, ViewAnimationActivity.class);
-                    break;
-                case 1:
-                    break;
-                case 2:
-                    break;
-                case 3:
-                    break;
-            }
-            activity.startActivity(intent);
-        }
+        startActivity(intent);
     }
 }
