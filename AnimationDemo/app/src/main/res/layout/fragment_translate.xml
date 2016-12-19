@@ -1,113 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <include layout="@layout/layout_constant_graph"
+    <include
+        layout="@layout/layout_constant_graph"
         android:layout_width="match_parent"
-        android:layout_height="200dp"/>
+        android:layout_height="200dp" />
 
-    <include layout="@layout/layout_constant_property"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Translate动画特有属性"
-        android:gravity="center"
-        android:textSize="16sp"
-        android:textColor="@android:color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <include
+                layout="@layout/layout_constant_property"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <TextView
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
-            android:text="FromXDelta:"
-            android:gravity="right"
-            android:textColor="@android:color/black"
-            android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Translate动画特有属性"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
 
-        <EditText
-            android:id="@+id/fragment_translate_et_fromxdelta"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
-            android:gravity="center"
-            android:inputType="number"
-            android:hint="默认0"
-            android:textSize="14sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
-            android:text="ToXDelta:"
-            android:gravity="right"
-            android:textColor="@android:color/black"
-            android:textSize="14sp" />
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="FromXDelta:"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
 
-        <EditText
-            android:id="@+id/fragment_translate_et_toxdelta"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
-            android:gravity="center"
-            android:inputType="number"
-            android:hint="默认0"
-            android:textSize="14sp"/>
+                <EditText
+                    android:id="@+id/fragment_translate_et_fromxdelta"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:gravity="center"
+                    android:hint="默认0"
+                    android:inputType="number"
+                    android:textSize="14sp" />
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="ToXDelta:"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/fragment_translate_et_toxdelta"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:gravity="center"
+                    android:hint="默认0"
+                    android:inputType="number"
+                    android:textSize="14sp" />
 
-        <TextView
-        android:layout_width="90dp"
-        android:layout_height="wrap_content"
-        android:text="FromYDelta:"
-        android:gravity="right"
-        android:textColor="@android:color/black"
-        android:textSize="14sp" />
+            </LinearLayout>
 
-        <EditText
-            android:id="@+id/fragment_translate_et_fromydelta"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
-            android:gravity="center"
-            android:inputType="number"
-            android:hint="默认0"
-            android:textSize="14sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
-            android:text="ToYDelta:"
-            android:gravity="right"
-            android:textColor="@android:color/black"
-            android:textSize="14sp" />
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="FromYDelta:"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
 
-        <EditText
-            android:id="@+id/fragment_translate_et_toydelta"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
-            android:gravity="center"
-            android:inputType="number"
-            android:hint="默认0"
-            android:textSize="14sp"/>
+                <EditText
+                    android:id="@+id/fragment_translate_et_fromydelta"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:gravity="center"
+                    android:hint="默认0"
+                    android:inputType="number"
+                    android:textSize="14sp" />
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="ToYDelta:"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
 
+                <EditText
+                    android:id="@+id/fragment_translate_et_toydelta"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:gravity="center"
+                    android:hint="默认0"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

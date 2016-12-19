@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">动画Demo</string>
+
+    <string name="alpha_animation">透明度</string>
+    <string name="rotate_animation">旋转</string>
+    <string name="scale_animation">缩放</string>
+    <string name="translate_animation">平移</string>
+</resources>

@@ -1,10 +1,21 @@
 package com.ares.animationdemo.view_animation.fragment;
 
-import android.support.v4.app.Fragment;
+
+import com.ares.animationdemo.R;
+import com.ares.animationdemo.base.BaseFragment;
 
 /**
- * Created by Administrator on 2016/12/16.
+ * Created by Ares on 2016/12/16.
  */
 
-public class RotateFragment extends Fragment {
+public class RotateFragment extends BaseFragment {
+    @Override
+    protected int getLayoutId() {
+        return R.layout.fragment_rotate;
+    }
+
+    @Override
+    protected void initParams() {
+
+    }
 }
